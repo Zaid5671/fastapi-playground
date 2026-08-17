@@ -1,0 +1,37 @@
+# 1. Environments & Secrets (CRITICAL)
+.env
+.venv
+env/
+venv/
+ENV/
+
+# 2. Python Runtime (Keeps repo clean of compiled junk)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. Relational Databases (FastAPI Phase 1)
+# Prevents you from pushing your local testing databases
+*.db
+*.sqlite
+*.sqlite3
+
+# 4. Vector Databases & AI (LLM / RAG Phase 2)
+# ChromaDB and others create heavy local folders to store embeddings. 
+# Never push these to GitHub.
+chroma_db/
+vector_store/
+faiss_index/
+*.parquet
+
+# 5. Logs (Prevents clutter)
+*.log
+
+# 6. OS Generated Files (Stops annoying hidden files from syncing)
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# 7. IDEs and Editors
+.vscode/
+.idea/
