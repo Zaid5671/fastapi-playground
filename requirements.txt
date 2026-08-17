@@ -1,0 +1,25 @@
+# Core Framework & CLI
+fastapi[standard]
+python-multipart
+pydantic-settings
+aiofiles
+jinja2
+
+# Authentication & Security
+passlib[bcrypt]
+bcrypt==4.0.1
+python-jose[cryptography]
+cryptography
+
+# Database & Migrations
+SQLAlchemy
+alembic
+psycopg2-binary
+asyncpg
+aiosqlite
+PyMySQL
+
+# Testing
+pytest
+pytest-asyncio
+httpx
